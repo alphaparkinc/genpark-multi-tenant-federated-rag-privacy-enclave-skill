@@ -1,0 +1,38 @@
+{
+  "name": "genpark-multi-tenant-federated-rag-privacy-enclave-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Multi-tenant federated RAG privacy enclave executing differential privacy queries and zero-knowledge cryptographic attestations.",
+  "author": "genpark",
+  "category": "confidential-rag",
+  "tags": [
+    "federated-rag",
+    "differential-privacy",
+    "zero-knowledge",
+    "confidential-computing",
+    "multi-tenant-privacy"
+  ],
+  "inputs": {
+    "federated_query": {
+      "type": "string"
+    },
+    "tenant_enclaves_count": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "enclave_query_id": {
+      "type": "string"
+    },
+    "differential_privacy_epsilon": {
+      "type": "number"
+    },
+    "zero_knowledge_proof_attested": {
+      "type": "boolean"
+    },
+    "attestation_certificate_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
